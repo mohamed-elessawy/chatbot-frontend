@@ -10,7 +10,7 @@ const apiUrlInput = document.getElementById("api-url");
 const apiEndpointInput = document.getElementById("api-endpoint");
 
 const STORAGE_KEY = "serenity_settings";
-const defaults = { apiUrl: "https://surprising-beauty-production-34f3.up.railway.app", endpoint: "/chat" };
+const defaults = { apiUrl: "https://alaasrour-serenity-backend.hf.space", endpoint: "/chat" };
 
 function loadSettings() {
   try {
@@ -220,7 +220,7 @@ async function send() {
     const res = await fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: text }),
+      body: JSON.stringify({ message: text, history: [] }) // modifies to match the function signature expected by the backend
     });
 
     hideTyping();
