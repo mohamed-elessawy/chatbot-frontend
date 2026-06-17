@@ -2,7 +2,7 @@
 
 A simple chat interface for the Serenity mental health support chatbot.
 
-**Live:** https://ishraq-hassan.github.io/chatbot-frontend/
+**Live:** https://mohamed-elessawy.github.io/chatbot-frontend/
 
 ## How it works
 
